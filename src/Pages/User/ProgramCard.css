@@ -1,0 +1,78 @@
+.program-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: 0 4px 6px var(--shadow-color);
+  background-color: var(--card-background);
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px var(--shadow-color);
+}
+
+.card-image-container {
+  position: relative;
+  height: 160px;
+  overflow: hidden;
+}
+
+.card-background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-logo-container {
+  position: absolute;
+  top: var(--spacing-md);
+  left: var(--spacing-md);
+  background-color: white;
+  padding: var(--spacing-sm);
+  border-radius: 4px;
+  box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.card-logo {
+  max-width: 100px;
+  max-height: 40px;
+  object-fit: contain;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: var(--spacing-lg);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-sm);
+  color: var(--primary-color);
+}
+
+.card-institution {
+  font-size: 1rem;
+  color: var(--secondary-color);
+  margin-bottom: var(--spacing-md);
+}
+
+.card-category-container {
+  margin-top: auto;
+}
+
+.card-category {
+  display: inline-block;
+  background-color: var(--tag-background);
+  color: var(--tag-color);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: 999px;
+}

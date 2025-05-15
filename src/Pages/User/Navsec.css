@@ -1,0 +1,151 @@
+/* .nav-containerr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 5%;
+    background: #1b2430;
+  padding: 20px 80px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.dark-nav {
+    background: rgba(8, 0, 58, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 5%;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+    
+}
+
+.nav-button {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-button:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 1rem;
+    }
+    
+    .nav-links {
+        gap: 1rem;
+    }
+    
+    .nav-button {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+} */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 20px 80px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    color: #333;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+  }
+  
+  .navbar li .nav-buton {
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #333;
+    transition: 0.3s ease-in-out;
+  }
+  .navbar li .nav-buton:hover,
+  .navbar li .nav-buton.active {
+    color: #17cf97;
+  }
+  
+  .navbar li .nav-buton:hover::after,
+  .navbar li .nav-buton.active::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #17cf97;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+  }
+  
+  #mobile {
+    display: none;
+  }
+  
+  #mobile i {
+    color: #333;
+    align-items: center;
+  }
+  /* Add to Navsec.css */
+.content-wrapper {
+  margin-top: 80px; /* Prevents navbar overlap */
+  padding: 20px;
+}
+  @media screen and (max-width: 769px) {
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position: fixed;
+      top: 90px;
+      right: -300px;
+      width: 300px;
+      height: 100vh;
+      background: #2a3239;
+      box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+      padding: 40px 0 0 10px;
+      transition: 0.3s ease-in-out;
+    }
+  
+    .navbar.active {
+      right: 0px;
+    }
+  
+    .navbar li {
+      margin-bottom: 25px;
+    }
+  
+    #mobile {
+      display: block;
+    }
+  
+    #mobile i {
+      font-size: 24px;
+      cursor: pointer;
+    }
+  }
