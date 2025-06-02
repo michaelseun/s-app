@@ -1,40 +1,142 @@
-.about{
-    margin: 100px auto;
-    display: flex;
-     flex-direction: row;
-     justify-content: center;
-     width: 90%;
-   }
-   .about-left{
-      position: relative;
-   } 
-   
-   .about-right{
-       flexbasis: 70%;
-       
-   }
-   
-   .about .about-img{
-      width: 80%;
-      border-radius: 10px;
-   
-   }
-   
 
-   .about h3{
-      font-weight: 700; 
-       font-size: 36px;
-       margin-bottom: 1rem;
-       text-align: center;
-       justify-content: center;
-   }
-   /* .about p{
-       font-size: 1.2rem;
-       margin:10px 20px ;
-       color: #737373;
-   
-   }
-   .about p b {
-       color: #2e323d;
-   }
-    */
+
+    .about-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 0.5rem 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-tagline {
+  color: #666;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.about-title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+.highlight {
+  color: var(--primary-color);
+}
+
+.about-description {
+  color: #666;
+  line-height: 1.6;
+  max-width: 90%;
+  font-size: 1.2rem;
+}
+
+.about-image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+
+.circle-decoration {
+  position: absolute;
+  bottom: -1rem;
+  right: -1rem;
+  width: 5rem;
+  height: 5rem;
+  background-color: rgba(239, 246, 255, 0.7);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.feature-box {
+  position: absolute;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  z-index: 2;
+}
+
+.student-focused {
+  top: 25%;
+  left: -3rem;
+}
+.accessible {
+  top: 75%;
+  left: -4rem;
+}
+.empowering{
+  top: 50%;
+  right: 4rem;
+}
+
+.footermain {
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+
+@media (max-width: 992px) {
+  .about-section {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+ 
+  .about-image-container {
+    margin-top: 2rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2.5rem;
+  }
+
+  .about-description {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .about-title {
+    font-size: 2.5rem;
+  }
+
+  .about-description {
+    max-width: 100%;
+  }
+  .student-focused {
+    top: 30%;
+    left: -1rem;
+  }
+  .accessible {
+    top: 100%;
+    left: -2rem;
+  }
+    .about-section {
+  padding: 0.5rem 0;
+  align-items: center;
+  justify-content: center;
+}
+}

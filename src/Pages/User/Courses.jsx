@@ -1,13 +1,13 @@
-import React from 'react'
+import React from 'react';
 import './Courses.css';
-import EducationPrograms from './EducationPrograms'
+import EducationPrograms from './EducationPrograms';
 
 const Courses = () => {
   return (
-    <div>
-      <EducationPrograms/>
-    </div>
-  )
-}
+    <section className="courses">
+      <EducationPrograms />
+    </section>
+  );
+};
 
-export default Courses
+export default Courses;

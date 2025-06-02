@@ -10,7 +10,7 @@ const Footer = () => {
         <div id="footer-two-cnt">
           <div id="footer-two-cnt-e">
             <h4>Contact</h4>
-            <a href="#" id="cnt2">
+            <a href="#m" id="cnt2">
               help@scholarApex.com
             </a>
             <br />

@@ -14,7 +14,11 @@
   transform: translateY(-5px);
   box-shadow: 0 10px 20px var(--shadow-color);
 }
-
+.card-finalYear{
+  font-size: 0.875rem;
+  color: var(--secondary-color);
+  margin-bottom: var(--spacing-md);
+}
 .card-image-container {
   position: relative;
   height: 160px;
@@ -27,7 +31,7 @@
   object-fit: cover;
 }
 
-.card-logo-container {
+/* .card-logo-container {
   position: absolute;
   top: var(--spacing-md);
   left: var(--spacing-md);
@@ -35,13 +39,13 @@
   padding: var(--spacing-sm);
   border-radius: 4px;
   box-shadow: 0 2px 4px var(--shadow-color);
-}
+} */
 
-.card-logo {
+/* .card-logo {
   max-width: 100px;
   max-height: 40px;
   object-fit: contain;
-}
+} */
 
 .card-content {
   display: flex;

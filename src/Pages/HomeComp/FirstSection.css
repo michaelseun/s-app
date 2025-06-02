@@ -1,70 +1,158 @@
-.first{
-    width: 100%; 
-    min-height: 100vh;
-    background:linear-gradient(rgba( 8, 0, 58, 0.7),rgba( 8, 0, 58, 0.7)),url(./feature2.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: var(--black-color);  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-    
+/* FirstSection.css */
+.first {
+  width: 100%; 
+  min-height: 100vh;
+  background: 
+    linear-gradient(rgba(8, 0, 58, 0.85), rgba(8, 0, 58, 0.9)),
+    url('https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
 }
 
-.first-main{
-    align-items: center;
-    justify-content: center;
-    color: var(--white-color);
-    
+/* Decorative elements */
+.first::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 10% 20%, rgba(255,255,255,0.08) 0%, transparent 25%),
+    radial-gradient(circle at 90% 80%, rgba(255,255,255,0.08) 0%, transparent 25%);
+  pointer-events: none;
 }
-.first-main .first-text{
-    text-align: center;
-    max-width: 800px;
-    
+
+.first-main {
+  max-width: 1200px;
+  z-index: 1;
 }
-.first-text h1{
-    font-size: 60px;
-    font-weight: 600;
-    padding-bottom: 1.5rem;
+
+.first-text {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
-.first-text h3{
-    max-width: 700px;
-    margin: 10px auto 20px;
-    line-height: 1.4;
-    font-style: italic;
-    padding-bottom: 1rem;
+
+.first-text h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
-span{
- background: -webkit-linear-gradient(16deg, #00f260, #0575e6);
-   -webkit-background-clip: text;
+
+.first-text h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.first-text span {
+  background: linear-gradient(16deg, #00f260, #0575e6);
+  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow: none;
 }
 
-  .button{
-    background: #ffffff;
-    color: #212121;
-    padding: 14px 5rem;
-    border-radius: 25px;
-    cursor: pointer;
-    border: 0;
-    outline: 0;
-    align-items: center;
-    justify-content: center;
-    font-weight: 800;
-    transition: all 0.5s ease;
-
+.button {
+  background: #ffffff;
+  color: #212121;
+  padding: 16px 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
 }
-.button:hover{
-    padding: 1rem 7rem;
-    background: #f0f0f0;
-    transition: 0.2 ease-in-out;
-    transform: translateZ(-15px) scale(1.14);
-  }
 
-.buttonp{
-    text-decoration: none;
-    color: #212121;
-    font-weight: 800;
+.button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  background: #f8f9fa;
+}
+
+.button:hover .arrow {
+  transform: translateX(5px);
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .first-text h1 {
+    font-size: 3.2rem;
   }
+  
+  .first-text h3 {
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .button {
+    padding: 14px 45px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .first {
+    background-attachment: scroll;
+  }
+  
+  .first-text h1 {
+    font-size: 2.8rem;
+  }
+  
+  .first-text h3 {
+    font-size: 1.1rem;
+    max-width: 90%;
+    margin-bottom: 2.5rem;
+  }
+  
+  .button {
+    padding: 12px 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .first-text h1 {
+    font-size: 2.2rem;
+  }
+  
+  .first-text h3 {
+    font-size: 1rem;
+  }
+  
+  .button {
+    padding: 12px 35px;
+    font-size: 0.95rem;
+  }
+}

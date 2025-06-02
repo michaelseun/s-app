@@ -4,6 +4,8 @@ import FirstSection from './Pages/HomeComp/FirstSection'
 import SecondSection from './Pages/HomeComp/SecondSection'
 import ThirdSection from './Pages/HomeComp/ThirdSection'
 import FourthSection from './Pages/HomeComp/FourthSection'
+import FifthSection from './Pages/HomeComp/FifthSection'
+
 
 
 
@@ -18,7 +20,7 @@ const Home = () => {
       <SecondSection/>
       <ThirdSection/>
       <FourthSection/>
-  
+      <FifthSection/>
     </div>
   )
 }

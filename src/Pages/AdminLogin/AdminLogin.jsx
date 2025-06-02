@@ -1,23 +1,21 @@
-import React, { useState } from "react";
-import "./Login.css";
-import { Link } from "react-router-dom";
-// Uncomment if using icons
-// import { CiUser, CiLock } from 'react-icons/ci';
+import  {useState} from 'react'
+import { Link } from 'react-router-dom';
+import "./AdminLogin.css"; 
 
-const Login = () => {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [rememberMe, setRememberMe] = useState(false);
+const AdminLogin = () => {
+      const [username, setUsername] = useState("");
+      const [password, setPassword] = useState("");
+      const [rememberMe, setRememberMe] = useState(false);
 
-  const handleSubmit = (e) => {
+    const handleSubmit = (e) => {
     e.preventDefault();
     // Handle login logic here
     console.log({ username, password, rememberMe });
   };
-
   return (
-    <div className="wrapper">
-      <div className="wrapper-main">
+    <div>
+        <div className="wrapperr">
+      <div className="wrapperr-main">
         {" "}
         {/* Fixed class name */}
         <div className="form-box login">
@@ -71,17 +69,16 @@ const Login = () => {
                 <a href="#register">Register Now</a>
               </p>
 
-              <p>Log in as adminstrator
-                <Link to="/AdminLogin" className="log">
-                  Admin Login
-                </Link>
-              </p>
+          
             </div>
           </form>
         </div>
       </div>
+      
     </div>
-  );
-};
+    
+    </div>
+  )
+}
 
-export default Login;
+export default AdminLogin

@@ -4,6 +4,7 @@ import message from "./mdi--message-fast-outline.png";
 import call_icon from "./phone-call.png";
 import mail_icon from "./gmail.png";
 import map from "./map.png";
+
 const FourthSection = () => {
   return (
     <div className="contact">
@@ -58,13 +59,15 @@ const FourthSection = () => {
             placeholder="Type your message"
             required
           ></textarea>
-          <button type="submit" className="btn dark-btn">
-            {" "}
+          <button type="submit" className=" faq-buttonn">
             Send
           </button>
         </form>
+
       </div>
+      
     </div>
+    
   );
 };
 
