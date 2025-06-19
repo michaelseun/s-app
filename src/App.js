@@ -9,6 +9,11 @@ import Navsec from './Pages/User/Navsec';
 import Home2 from './Home2';
 import Hero from './Pages/User/Hero';
 import Courses from './Pages/User/Courses';
+import Register from './Pages/Register/Register';
+import AdminDashboard from './Pages/AdminDashboard/AdminDashboard';
+import AdminScreen from './Pages/Adminscreen/AdminScreen';
+import SenCourses from './Pages/User/SenCourses/SenCourses';
+import CybCourse from './Pages/User/CybCourse/CybCourse';
 
 function App() {
   return (
@@ -19,11 +24,16 @@ function App() {
       {/* Login route */}
       <Route path="/login" element={<Login />} />
       <Route path="/AdminLogin" element={<AdminLogin />} />
+      <Route path="/Register" element={<Register />} />
+      <Route path="/AdminDashboard" element={<AdminDashboard />} />
+      <Route path="/AdminScreen" element={<AdminScreen />} />
 
       {/* User section with nested routes */}
       <Route path="/user" element={<Navsec />}>
         <Route index element={<Hero />} />
-        <Route path="courses" element={<Courses />} /> {/* Now accessible at /user/courses */}
+        <Route path="courses" element={<Courses />} />
+        <Route path="SenCourses" element={<SenCourses />} />
+        <Route path="CybCourse" element={<CybCourse />} /> {/* Now accessible at /user/courses */}
         {/* Add other user-related routes here */}
       </Route>
 

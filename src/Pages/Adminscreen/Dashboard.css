@@ -1,0 +1,85 @@
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.welcome-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-card h1 {
+  color: #1e40af;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.welcome-card p {
+  color: #6b7280;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.dashboard-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #f3f4f6;
+}
+
+.icon-blue {
+  color: #3b82f6;
+}
+
+.icon-green {
+  color: #10b981;
+}
+
+.icon-purple {
+  color: #8b5cf6;
+}
+
+.icon-orange {
+  color: #f97316;
+}
+
+.dashboard-card h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #374151;
+}
+
+@media (max-width: 640px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}

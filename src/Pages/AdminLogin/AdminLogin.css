@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(8,0,58,0.7), rgba(8,0,58,0.7)), url(./2304.i402.013.S.m004.c13.Event\ planning\ flat\ composition.jpg);
+    background: linear-gradient(rgba(8,0,58,0.7), rgba(8,0,58,0.7)), url(./adminbg.png);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -42,7 +42,7 @@ form .inputbox {
     width: 100%;
     height: 100%;
     background: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    border: 3px solid rgba(255, 255, 255, 0.4);
     border-radius: 40px;
     font-size: 1rem;
     color: #fff;
@@ -89,6 +89,7 @@ button.login-button  {
     color: #333;
     font-weight: 600;
     transition: background 0.3s ease;
+    margin-bottom: 1rem;
 }
 
 button.login-button:hover {
@@ -97,6 +98,10 @@ button.login-button:hover {
 button .log{
     color: #333;
     text-decoration: none;
+}
+.logg{
+    text-decoration: none;
+    color: #333;
 }
 .register-link {
     text-align: center;

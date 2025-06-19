@@ -28,10 +28,10 @@ const Footer = () => {
           </div>
           </div>
           <div id="footer-two-cnt-a">
-            <h4>lagos</h4>
-            <p>151 Herbert Macaulay Way, Yaba, Lagos, Nigeria</p>
+            <h4>Address</h4>
+            <p>Lagos - Ibadan Expy, Olonde/Aba-Nla 110108, Oyo</p>
           </div>
-          <div id="footer-two-cnt-b">
+          {/* <div id="footer-two-cnt-b">
             <h4>London</h4>
             <p>5 New Street Square, London, EC4A 3TW, United Kingdom</p>
           </div>
@@ -41,7 +41,7 @@ const Footer = () => {
               146 Campground Road, Snakepit Building, Level 4, Newlands, Cape
               Town
             </p>
-          </div>
+          </div> */}
         </div>
         <p className="footermain">
         copyright @ 2025 by <span>mike devx</span> | all rights reserved!

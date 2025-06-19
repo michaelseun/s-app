@@ -68,7 +68,9 @@ const Login = () => {
             <div className="register-link">
               <p>
                 Don't have an account?
-                <a href="#register">Register Now</a>
+                <Link to="/Register" className="log">
+                  Register
+                </Link>
               </p>
 
               <p>Log in as adminstrator

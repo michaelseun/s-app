@@ -37,7 +37,6 @@ function Career() {
               Access 100+ courses in AI, business, technology, and more.
             </p>
           </div>
-
           {/* Earn valuable credentials */}
           <div className="benefit-card">
             <div className="icon-container">

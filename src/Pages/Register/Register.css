@@ -1,0 +1,92 @@
+/* Register.css */
+.register-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(8,0,58,0.7), rgba(8,0,58,0.7)), url(./3071357.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 420px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    max-height: 90vh;
+}
+
+.register-form {
+    width: 100%;
+}
+
+.register-form h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.register-form .input-box {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.input-box input {
+    width: 100%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+    font-size: 0.9rem;
+    color: #fff;
+    padding: 10px 20px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-box input:focus {
+    border-color: #fff;
+}
+
+.register-form button.register-button {
+    width: 100%;
+    padding: 12px;
+    background: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+.register-form button.register-button:hover {
+    background: #f0f0f0;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.login-link a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}

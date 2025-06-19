@@ -31,21 +31,7 @@
   object-fit: cover;
 }
 
-/* .card-logo-container {
-  position: absolute;
-  top: var(--spacing-md);
-  left: var(--spacing-md);
-  background-color: white;
-  padding: var(--spacing-sm);
-  border-radius: 4px;
-  box-shadow: 0 2px 4px var(--shadow-color);
-} */
 
-/* .card-logo {
-  max-width: 100px;
-  max-height: 40px;
-  object-fit: contain;
-} */
 
 .card-content {
   display: flex;
@@ -79,4 +65,49 @@
   font-weight: 600;
   padding: var(--spacing-sm) var(--spacing-md);
   border-radius: 999px;
+}
+/* Add to existing ProgramCard.css */
+.program-card {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.card-buttons {
+  margin-top: var(--spacing-md);
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.btn {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view-btn {
+  background-color: rgba(0, 123, 255, 0.1);
+  color: var(--primary-color);
+}
+
+.view-btn:hover {
+  background-color: rgba(0, 123, 255, 0.2);
+}
+
+.download-btn {
+  background-color: rgba(40, 167, 69, 0.1);
+  color: var(--primary-color);
+}
+
+.download-btn:hover {
+  background-color: rgba(40, 167, 69, 0.2);
 }
