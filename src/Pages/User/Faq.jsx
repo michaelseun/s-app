@@ -12,17 +12,17 @@ function Faq() {
     {
       question: "What is ScholarApex?",
       answer:
-     "Scholar Apex is a student-built, student-focused academic platform and community designed to propel university learners toward their highest potential",
+     "Scholar Apex is a student-built, student-focused academic platform designed to propel university learners toward their highest potential",
     },
     {
       question: "How does ScholarApex Work",
       answer:
-        "Through its AI-driven perso nalization, dynamic community engagement, and focused career preparation, Scholar Apex transforms the university experience. It empowers students to take ownership of their learning journey, benefit from collective wisdom, and step confidently into the professional world—truly making Scholar Apex a launchpad for academic excellence and professional growth.",
+     "Scholar Apex transforms the university experience through its extensive resource library, active community engagement, and focused career-readiness support. It empowers students to take control of their learning, access shared expertise, and confidently transition into their professional lives. Scholar Apex truly serves as a springboard for both academic success and career growth.",
     },
     {
       question: "Who is ScholarApex for?",
       answer:
-        "ScholarAPpex is designed for students, professionals, educators, and lifelong learners who want to maximize their learning efficiency. Whether you're studying for exams, acquiring new skills, or expanding your knowledge, our platform adapts to your specific needs.",
+        "ScholarAPpex is designed for learners who want to maximize their learning efficiency. Whether you're studying for exams or expanding your knowledge, our platform adapts to your specific needs.",
     },
   ];
 

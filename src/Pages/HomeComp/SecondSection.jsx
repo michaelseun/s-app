@@ -7,7 +7,7 @@ import './SecondSection.css';
 const SecondSection = () => {
   return (
     <div className="second-section">
-      <h2 className="section-title">Get Started</h2>
+      <h2 className="section-title">What We Offer </h2>
       
       <div className="features">
         {/* Feature 1: Curated Learning Resources */}
